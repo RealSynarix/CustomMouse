@@ -56,11 +56,3 @@ High-end mice usually cost **$150.00+**. This build shows you can get better spe
 *\*Includes: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
 
 *Note: The $69 PCB cost actually covered 5 boards, so the cost per mouse is even lower if I make more!*
-
----
-
-## 📂 Folders
-* `/Hardware`: KiCad files and Gerbers.
-* `/Firmware`: STM32 source code.
-* `/Shell`: STL files for 3D printing.
-* `/Production`: Final BOM and Placement files.
