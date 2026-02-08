@@ -5,7 +5,7 @@ A custom-built, ultra-lightweight gaming mouse featuring the **PixArt PMW3360** 
 ## 🚀 Project Overview
 This project is the result of a deep dive into peripheral engineering. I self-taught the PCB design and firmware development by studying datasheets and documentation to create a mouse that rivals top-tier retail options.
 
-The build uses a **1.6mm FR4 PCB** which provides great structural integrity and a low center of gravity for a balanced, tactile feel.
+The build uses a **1.6mm HASL PCB** which provides great structural integrity and a low center of gravity for a balanced, tactile feel.
 
 ### Why This Project?
 * **100% Custom:** I designed the firmware, the 3D-printable shell, and the PCB architecture myself.
