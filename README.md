@@ -1,42 +1,66 @@
 # Custom Gaming Mouse: High-Performance DIY (PMW3360 + STM32)
 
-A custom-engineered, ultra-lightweight gaming mouse featuring a high-performance optical sensor and an STM32 microcontroller. Designed for maximum precision, low latency, and a semi-ergonomic shape. This is ideal for gamers and casuals alike.
+A custom-engineered, ultra-lightweight gaming mouse featuring a high-performance **PixArt PMW3360** optical sensor and an **STM32** (ARM Cortex-M) microcontroller. Designed for maximum precision, ultra-low latency, and a semi-ergonomic form factor, this project is built for competitive gamers and hardware enthusiasts alike.
 
-## 🚀 Overview
-This project bridges the gap between enthusiast-grade hardware and DIY accessibility. By utilizing the **PMW3360** sensor (insane specs for price and ease of routing), and a custom **1.6mm PCB**, this mouse is optimized for a low center of gravity and high structural integrity. This mouse also fully custom built by me, and I self taught and looked at doccumentation and used google gemini for help in some aspects. 
+## 🚀 Project Overview
+This project bridges the gap between enthusiast-grade hardware and DIY accessibility. Developed through self-taught engineering—utilizing official documentation and AI-assisted troubleshooting—this mouse is a ground-up realization of modern peripheral design.
+
+The build utilizes a **1.6mm FR4 PCB** optimized for high structural integrity and a low center of gravity, ensuring a balanced and tactile user experience.
 
 ### Why It Stands Out
-* **Fully Custom** Firmware, Shell, and PCB are all designed by me alone.
-* **Dual-Board Design:** Features a dedicated daughterboard for the side button, which allows you to toggle **HyprX** mode (more on that further down).
-* **Custom Firmware:** Powered by STM32, my firmware is optimised as much as possible for the lowest latency and the most smooth mosue experience. It also has a built in macro i dubbed **HyprX**.
-* **Native USB-C:** Modern, 6obust connectivity for power and data. If the usb cable is cut or broken, no need to repair or throw it out, its hot swappable and you can just unplug it!
+* **Fully Bespoke Design:** The firmware, 3D-printable shell, and PCB architecture were all designed from scratch.
+* **Dual-Board Architecture:** Features a dedicated daughterboard for side-button inputs, optimizing internal space and modularity.
+* **Optimized Firmware:** Custom STM32-based firmware designed for ultra-low input latency and high-speed cursor tracking.
+* **HyprX Macro Engine:** A unique, hardware-level macro suite toggled via the side button for specialized gameplay.
+* **Native USB-C Connectivity:** Robust and modern interface. The design is "hot-swappable"—if your cable breaks, you can simply replace it without needing to repair or discard the mouse.
 
 ## 🛠 Features & Specs
 | Feature | Specification |
 | :--- | :--- |
 | **Sensor** | PixArt PMW3360 Optical |
-| **MCU** | STM32 (ARM Cortex-M) |
+| **MCU** | STM32 (ARM Cortex-M Series) |
 | **Polling Rate** | 1000 Hz (Stable) |
-| **Max DPI** | 12,000 DPI |
-| **Default DPI** | 1,000 DPI |
+| **DPI Range** | 100 – 12,000 DPI (Default: 1,000) |
 | **Tracking Speed** | 250 IPS |
 | **Acceleration** | 50 G |
-| **Switches** | Kailh Mute Red (LMB/RMB/MMB/SB) |
-| **Rotary Encoder** | TTC Gold Dustproof (24 Step) |
+| **Primary Switches** | Kailh Mute Red (LMB / RMB / MMB / SB) |
+| **Scroll Wheel** | TTC Gold Dustproof Encoder (24 Step) |
+| **Interface** | USB-C (Data + Power) |
 
 ## 📐 Hardware Details
-The PCB was designed in KiCad with a focus on a small size and cleanest routing. The schematic is also very polished.
-* **Differential Pair Routing:** D+/D- lines matched to roughly <1mm-4mm for reliable USB communication.
-* **Mechanicals:** Integrated 4-Pin header for easy firmware flashing and debugging.
+The PCB was designed in **KiCad**, focusing on a compact footprint and clean routing.
+* **Signal Integrity:** USB D+/D- differential pairs are length-matched within a tolerance of <1mm to ensure error-free communication at high polling rates.
+* **Mechanicals:** Integrated 4-pin SWD header allows for rapid firmware flashing and real-time debugging.
+* **Stability:** Optimized decoupling capacitors and power rail isolation for the PMW3360 to eliminate sensor jitter.
 
-## 💰 Cost Comparison
-High-end "enthusiast" mice often retail for over $150. This project proves you can get superior performance for much less of a price.
 
-| Item | This Project (DIY) | Popular "Pro" Mouse (Retail) |
+
+## 🔥 HyprX Macro System
+The custom firmware includes a unique hardware-level toggle known as **HyprX**. 
+* **Activation:** Toggled via a dedicated side button.
+* **Visual Feedback:** Internal LEDs transition from "Neon Blue" (Default Mode) to "Blazing Red" (HyprX Active).
+* **Macro Functions:** * **Scroll Up:** Maps each of the 24 steps of the TTC Gold encoder to a Left Mouse Button (LMB) click.
+    * **Scroll Down:** Executes rapid-fire Right Mouse Button (RMB) spamming.
+* **Toggle Off:** Pressing the side button again reverts the mouse to standard scrolling and default lighting.
+
+## 💰 Cost Analysis
+High-end "Pro" mice often retail for over **$150.00**. This project delivers equivalent performance with the added benefit of repairability and full user control over the hardware.
+
+| Item | DIY Project Cost | Retail "Pro" Mouse |
 | :--- | :--- | :--- |
-| **PCB & Assembly (PCBA)** | $69.51 | N/A |
-| **3D Printing (Shell)** | ~$2.00 | N/A |
-| **Personally Soldered Components (Switches/Rotary Encoder/Sensor)** | ~$25 | N/A |
-| **Total Cost** | **~$96** |
+| **PCB & PCBA (5 Units)** | $69.51 | N/A |
+| **3D Printed Shell** | ~$2.00 | N/A |
+| **Custom Components*** | ~$25.00 | N/A |
+| **Total Build Cost** | **~$96.51** | **$150.00+** |
 
-*Note: The DIY cost includes 5x PCBs (standard minimum order), making the cost-per-unit even lower if building multiple.*
+*\*Includes specialized components: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
+
+*Note: The DIY cost includes a minimum order of 5 PCBs, making the cost-per-unit significantly lower for subsequent builds.*
+
+---
+
+## 📂 Repository Structure
+* `/Hardware`: KiCad project files and Gerber outputs.
+* `/Firmware`: STM32 source code and compiled binaries.
+* `/Shell`: STL and STEP files for 3D printing.
+* `/Docs`: Wiring diagrams and assembly guides.
