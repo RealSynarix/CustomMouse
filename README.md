@@ -2,8 +2,6 @@
 
 A custom-engineered, ultra-lightweight gaming mouse featuring a high-performance optical sensor and an STM32 microcontroller. Designed for maximum precision, low latency, and a semi-ergonomic shape. This is ideal for gamers and casuals alike.
 
-!
-
 ## 🚀 Overview
 This project bridges the gap between enthusiast-grade hardware and DIY accessibility. By utilizing the **PMW3360** sensor (insane specs for price and ease of routing), and a custom **1.6mm PCB**, this mouse is optimized for a low center of gravity and high structural integrity. This mouse also fully custom built by me, and I self taught and looked at doccumentation and used google gemini for help in some aspects. 
 
