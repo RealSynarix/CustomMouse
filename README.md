@@ -1,4 +1,4 @@
-# Custom Gaming Mouse: High-Performance DIY (PMW3360 + STM32)
+# Fully DIY Gaming Mouse
 
 A custom-engineered, ultra-lightweight gaming mouse featuring a high-performance **PixArt PMW3360** optical sensor and an **STM32** (ARM Cortex-M) microcontroller. Designed for maximum precision, ultra-low latency, and a semi-ergonomic form factor, this project is built for competitive gamers and hardware enthusiasts alike.
 
@@ -56,11 +56,3 @@ High-end "Pro" mice often retail for over **$150.00**. This project delivers equ
 *\*Includes specialized components: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
 
 *Note: The DIY cost includes a minimum order of 5 PCBs, making the cost-per-unit significantly lower for subsequent builds.*
-
----
-
-## 📂 Repository Structure
-* `/Hardware`: KiCad project files and Gerber outputs.
-* `/Firmware`: STM32 source code and compiled binaries.
-* `/Shell`: STL and STEP files for 3D printing.
-* `/Docs`: Wiring diagrams and assembly guides.
