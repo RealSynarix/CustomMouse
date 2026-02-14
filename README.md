@@ -49,11 +49,11 @@ High-end mice usually cost **$150.00+**. This build shows you can get better spe
 
 | Item | My Build Cost |
 | :--- | :--- |
-| **PCB & PCBA (5 Units)** | $69.51 |
+| **PCB & PCBA (5 & 2 Units respectively)** | $69.51 |
 | **3D Printed Shell** | ~$2.00 |
 | **Custom Parts*** | ~$25.00 |
 | **Total Build Cost** | **~$96.51** |
 
 *\*Includes: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
 
-*Note: Depending on the PCBS purchased and if you solder yourself, you can save even more money! These price points are all in AUD*
+*Note: Depending on the PCBs purchased and if you solder yourself, you can save even more money! These price points are all in AUD*
