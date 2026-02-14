@@ -3,7 +3,7 @@
 A custom-built, ultra-lightweight gaming mouse featuring the **PixArt PMW3360** high-performance sensor and an **STM32** microcontroller. I designed this from the ground up for maximum precision/smoothness, near zero latency, and a semi-ergonomic feel. 
 
 ## 🚀 Project Overview
-This project is the result of a deep dive into peripheral engineering. I self-taught the PCB design and firmware development by studying datasheets and documentation to create a mouse that rivals top-tier retail options.
+This project is the result of a deep dive into peripheral engineering. I self-taught the PCB design and firmware development by studying datasheets and documentation to create a mouse that rivals top-tier retail options. This took roughly 3 months of work, and during this time I learned (Self Taught) Kicad, Fusion360 + TinkerCAD, Electrical Schematics, Trace Routing, and much more. I would also like to say that my main motives for making this is due to consumer level mice being very expensive for good hardware, and the big tech who makes them not even making them opensource and bloated with windows specific software. My aim is to make an opensource and easy to repair and build mouse that is significantly cheaper and better and also does not have any software and works right after the firmware is flashed.
 
 The build uses a **1.6mm HASL PCB** which provides great structural integrity and a low center of gravity for a balanced, tactile feel.
 
@@ -18,25 +18,26 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 | Feature | Specification |
 | :--- | :--- |
 | **Sensor** | PixArt PMW3360 Optical |
-| **MCU** | STM32 (ARM Cortex-M) |
-| **Polling Rate** | 1000 Hz (Stable) |
+| **MCU** | STM32G431KBT6 (170MHz ARM Cortex-M4) |
+| **Polling Rate** | 1000 Hz (1ms delay) |
 | **DPI Range** | 100 – 12,000 DPI (Default: 1,000) |
+| **Click Latency** | <0.5ms (Industry Sda is ~5ms) |
 | **Tracking Speed** | 250 IPS |
 | **Acceleration** | 50 G |
 | **Primary Switches** | Kailh Mute Red (LMB / RMB / MMB / SB) |
 | **Scroll Wheel** | TTC Gold Dustproof Encoder (24 Step) |
-| **Interface** | USB-C (Data + Power) |
+| **Interface** | USB-C Full-Speed (Wired) |
 
 ## 📐 Hardware Details
 I designed the PCB in **KiCad** with a major focus on clean routing and a small footprint.
-* **Signal Integrity:** USB D+/D- lines are length-matched within <1mm to ensure stable 1000Hz polling without data errors.
+* **Signal Integrity:** USB D+/D- lines are decently length-matched to ensure stable 1000Hz polling without data errors.
 * **Debugging:** I integrated a 4-pin SWD header so I can flash and debug firmware on the fly.
 * **Sensor Stability:** I used specific decoupling caps and isolated the power rails for the PMW3360 to stop any sensor jitter before it starts.
 
 
 
 ## 🔥 HyprX Macro System
-I coded a unique hardware toggle into the firmware called **HyprX**. 
+I coded a unique hardware toggle into the firmware I dub **HyprX**. 
 * **The Toggle:** Controlled via the side button.
 * **LED Feedback:** The mouse glows "Neon Blue" by default, but switches to "Blazing Red" when HyprX is active.
 * **The Macros:** * **Scroll Up:** Maps every step of the 24-step TTC Gold encoder to an LMB click.
@@ -46,13 +47,13 @@ I coded a unique hardware toggle into the firmware called **HyprX**.
 ## 💰 Cost Analysis
 High-end mice usually cost **$150.00+**. This build shows you can get better specs and full repairability for way less.
 
-| Item | My Build Cost | Pro Retail Mouse |
-| :--- | :--- | :--- |
-| **PCB & PCBA (5 Units)** | $69.51 | N/A |
-| **3D Printed Shell** | ~$2.00 | N/A |
-| **Custom Parts*** | ~$25.00 | N/A |
-| **Total Build Cost** | **~$96.51** | **$150.00+** |
+| Item | My Build Cost |
+| :--- | :--- |
+| **PCB & PCBA (5 Units)** | $69.51 |
+| **3D Printed Shell** | ~$2.00 |
+| **Custom Parts*** | ~$25.00 |
+| **Total Build Cost** | **~$96.51** |
 
 *\*Includes: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
 
-*Note: The $69 PCB cost actually covered 5 boards, so the cost per mouse is even lower if I make more!*
+*Note: Depending on the PCBS purchased and if you solder yourself, you can save even more money! These price points are all in AUD*
