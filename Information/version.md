@@ -1,8 +1,10 @@
-// This file is here to explain how the version works in this project.
+This file is here to explain how the version works in this project.
 **vX.Y.Z**
 
 -x stands for full project version.
+
 -y stands for board redesigns
+
 -z stands for issues fixed.
 
 **Examples:**
