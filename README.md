@@ -19,7 +19,7 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 | :--- | :--- |
 | **Sensor** | PixArt PMW3360 Optical |
 | **MCU** | STM32G431KBT6 (170MHz ARM Cortex-M4) |
-| **Polling Rate** | 1000 Hz (1ms delay) |
+| **Polling Rate** | 4000 Hz |
 | **DPI Range** | 100 – 12,000 DPI (Default: 1,000) |
 | **Click Latency** | <0.5ms (Industry Sda is ~5ms) |
 | **Tracking Speed** | 250 IPS |
@@ -27,6 +27,7 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 | **Primary Switches** | Kailh Mute Red (LMB / RMB / MMB / SB) |
 | **Scroll Wheel** | TTC Gold Dustproof Encoder (24 Step) |
 | **Interface** | USB-C Full-Speed (Wired) |
+| **Customization** | ??? |
 
 ## 📐 Hardware Details
 I designed the PCB in **KiCad** with a major focus on clean routing and a small footprint.
@@ -49,10 +50,10 @@ High-end mice usually cost **$150.00+**. This build shows you can get better spe
 
 | Item | My Build Cost |
 | :--- | :--- |
-| **PCB & PCBA (5 & 2 Units respectively)** | $69.51 |
-| **3D Printed Shell** | ~$2.00 |
+| **PCB & PCBA (5 & 2 Units respectively)** | $55.81 |
+| **3D Printed Shell** | ~$1.00 |
 | **Custom Parts*** | ~$25.00 |
-| **Total Build Cost** | **~$96.51** |
+| **Total Build Cost** | **~$81.81** |
 
 *\*Includes: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
 
