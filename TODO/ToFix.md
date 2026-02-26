@@ -26,7 +26,7 @@
 * **The Problem:** While it fits and seems fine, the ground on the DB is 3.3v on the MB and the data pins are swapped. This would cause an immedient short.
 * **Action:** Re-evaluate pins and ensure propper layout.
 
-* ### 6. Firmware Jumper Pins & BOOT0/NRST
+### 6. Firmware Jumper Pins & BOOT0/NRST
 * **Issue:** The 4-pin header that is used to flash firmware is not working as expected and the way I have setup the booting of the device has made it nrarly impossible to manage.
 * **The Problem:** I cannot get the device to allow firmware modification and injection, and If i cannot do it then it is not good enough for an end user either.
 * **Action:** Remove the 4-pin header and use a button or other means as to boot into firmware/development mode.
