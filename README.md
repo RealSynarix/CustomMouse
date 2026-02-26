@@ -1,4 +1,4 @@
-# Fully DIY Gaming Mouse
+# Fully DIY Gaming Mouse - v1.0.0
 
 A custom-built, ultra-lightweight gaming mouse featuring the **PixArt PMW3360** high-performance sensor and an **STM32** microcontroller. I designed this from the ground up for maximum precision/smoothness, near zero latency, and a semi-ergonomic feel. 
 
