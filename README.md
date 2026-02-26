@@ -31,7 +31,7 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 
 ## 📐 Hardware Details
 I designed the PCB in **KiCad** with a major focus on clean routing and a small footprint.
-* **Signal Integrity:** USB D+/D- lines are decently length-matched to ensure stable 1000Hz polling without data errors.
+* **Signal Integrity:** USB D+/D- lines are decently length-matched to ensure stable 4000Hz polling without data errors.
 * **Debugging:** I integrated a 4-pin SWD header so I can flash and debug firmware on the fly.
 * **Sensor Stability:** I used specific decoupling caps and isolated the power rails for the PMW3360 to stop any sensor jitter before it starts.
 
