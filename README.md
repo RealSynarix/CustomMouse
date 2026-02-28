@@ -1,4 +1,4 @@
-# Fully DIY Gaming Mouse - v1.0.0
+# Cobalt-X Zero - v1.1.4
 
 A custom-built, ultra-lightweight gaming mouse featuring the **PixArt PMW3360** high-performance sensor and an **STM32** microcontroller. I designed this from the ground up for maximum precision/smoothness, near zero latency, and a semi-ergonomic feel. 
 
@@ -11,8 +11,9 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 * **100% Custom:** I designed the firmware, the 3D-printable shell, and the PCB architecture myself.
 * **Dual-Board Setup:** I used a dedicated daughterboard for the side buttons to keep the main shell clean and modular.
 * **Low Latency Firmware:** My custom STM32 firmware is written for the fastest possible input response and smooth tracking.
-* **HyprX Macro Engine:** A custom hardware-level macro suite I built that toggles via the side button.
+* **HyprX Macro:** A custom hardware-level macro I built that toggles via the side button.
 * **True USB-C:** A modern interface that makes the mouse "hot-swappable." If your cable ever dies, just plug in a new one and keep playing.
+* **Superior Customization:** This project has a feature not seen in any other mice on the market, a custom config file to edit parameters of the mouse easily without custom software or flashing of firmware.
 
 ## 🛠 Features & Specs
 | Feature | Specification |
@@ -24,18 +25,16 @@ The build uses a **1.6mm HASL PCB** which provides great structural integrity an
 | **Click Latency** | <0.5ms (Industry Sda is ~5ms) |
 | **Tracking Speed** | 250 IPS |
 | **Acceleration** | 50 G |
-| **Primary Switches** | Kailh Mute Red (LMB / RMB / MMB / SB) |
+| **Push Buttons** | Kailh Mute Red (LMB / RMB / MMB / MAC / DFU) |
 | **Scroll Wheel** | TTC Gold Dustproof Encoder (24 Step) |
 | **Interface** | USB-C Full-Speed (Wired) |
-| **Customization** | ??? |
+| **Customization** | Custom config file which eliminates bloated software |
 
 ## 📐 Hardware Details
 I designed the PCB in **KiCad** with a major focus on clean routing and a small footprint.
-* **Signal Integrity:** USB D+/D- lines are decently length-matched to ensure stable 4000Hz polling without data errors.
-* **Debugging:** I integrated a 4-pin SWD header so I can flash and debug firmware on the fly.
+* **Signal Integrity:** USB D+/D- lines are perfectly length-matched to ensure stable 4000Hz polling without data errors.
+* **Debugging:** I integrated 3 debug pads so you can revert after a bad flash, and a easy to use (like a pi pico) button that held and plugged in enters DFU mode for flashing.
 * **Sensor Stability:** I used specific decoupling caps and isolated the power rails for the PMW3360 to stop any sensor jitter before it starts.
-
-
 
 ## 🔥 HyprX Macro System
 I coded a unique hardware toggle into the firmware I dub **HyprX**. 
@@ -44,17 +43,3 @@ I coded a unique hardware toggle into the firmware I dub **HyprX**.
 * **The Macros:** * **Scroll Up:** Maps every step of the 24-step TTC Gold encoder to an LMB click.
     * **Scroll Down:** Executes a rapid-fire RMB spam.
 * **Reset:** Press the side button again to go back to normal scrolling and blue lighting.
-
-## 💰 Cost Analysis
-High-end mice usually cost **$150.00+**. This build shows you can get better specs and full repairability for way less.
-
-| Item | My Build Cost |
-| :--- | :--- |
-| **PCB & PCBA (5 & 2 Units respectively)** | $55.81 |
-| **3D Printed Shell** | ~$1.00 |
-| **Custom Parts*** | ~$25.00 |
-| **Total Build Cost** | **~$81.81** |
-
-*\*Includes: PMW3360 sensor, TTC Gold Encoder, and Kailh Mute switches.*
-
-*Note: Depending on the PCBs purchased and if you solder yourself, you can save even more money! These price points are all in AUD*
