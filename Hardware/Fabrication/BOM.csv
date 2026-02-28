@@ -1,0 +1,16 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"C8,C15,C3,C11,C17,C16,C4,C7";"C_0603_1608Metric";8;"100nF";;;
+2;"U1";"LQFP-32_7x7mm_P0.8mm";1;"STM32G431KBT6";;;
+3;"R2,R3";"R_0603_1608Metric";2;"5.1k";;;
+4;"C9,C1";"C_0603_1608Metric";2;"1uF";;;
+5;"TP1,TP2,TP3";"TestPoint_Pad_D1.0mm";3;"TestPoint";;;
+6;"DFU1,RMB1,LMB1,MMB1,MACRO1";"SW_PUSH_6mm_H7.3mm_2-Pin";5;"SW_Push";;;
+7;"C2";"C_0603_1608Metric";1;"4.7uF";;;
+8;"D3,D2,D1";"LED_D5.0mm-4_RGB";3;"WS2812B";;;
+9;"R6,R5,R1";"R_0603_1608Metric";3;"10k";;;
+10;"USB1";"USB_C_Receptacle_HRO_TYPE-C-31-M-12";1;"USB_C_Receptacle_USB2.0_14P";;;
+11;"WHEEL1";"TRIM_EC10E1220501";1;"EC10E1220501";;;
+12;"C5";"C_0603_1608Metric";1;"10uF";;;
+13;"SENSOR1";"PMW3360";1;"PMW3360DM-T2QU";;;
+14;"REGULATOR1";"SOT-23-5";1;"AP2112K-3.3";;;
+15;"R4";"R_0603_1608Metric";1;"39";;;
