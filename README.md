@@ -14,7 +14,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 
 * **Internal 32kHz Oversampling:** While the USB polls at 1000Hz, the **STM32G4** (170MHz) polls the **PMW3360** sensor at 32,000Hz internally. This allows for advanced hardware-level jitter filtering and superior motion smoothness.
 * **DMA-Driven Pipeline:** Implemented Direct Memory Access (DMA) to handle sensor data transfer, bypassing CPU interrupts to ensure the processor is 100% focused on packets and the macro.
-* **Eager Debounce Algorithm:** Unlike standard mice that wait ~5ms to verify a click, Cobalt-X triggers on the initial falling edge of the signal for **sub-0.5ms click latency**.
+* **Eager Debounce Algorithm:** Unlike standard mice that wait ~5ms to verify a click, Cobalt-X triggers on the initial falling edge of the signal for **sub-ms click latency**.
 * **Predictive Packet Readiness:** HID packets are formatted and buffered in advance of the USB/OS request, ensuring data is delivered instantly from the buffer.
 
 ## Key Features
