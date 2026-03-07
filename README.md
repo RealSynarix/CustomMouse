@@ -19,7 +19,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 
 ## Key Features
 * **Zero-Software Config (VFS):** Hold the Macro button on plug-in to mount a **67MB Virtual Drive**. Edit `config.ini` directly to change DPI, Polling, and LOD without Windows-only bloatware.
-* **40g Ultra-Lightweight:** Engineered on a **1.2mm FR4 PCB** providing a ~25% weight reduction compared to standard 1.6mm boards while maintaining structural integrity.
+* **<ENTER WEIGHT HERE>g Ultra-Lightweight:** Engineered on a **1.2mm FR4 PCB** providing a ~25% weight reduction compared to standard 1.6mm boards while maintaining structural integrity.
 * **Hotswap USB-C:** A true modular interface allowing for custom paracord cables to reduce e-waste and achieve a "wireless" feel.
 * **Superior Firmware:** One main reason this mouse is better is the firmware. Like it's depicted above, the firmware is not only superior in every way, but also is under 1KB.
 * **HyprX Hardware Macros:** A dedicated hardware toggle that maps the **TTC Gold 24-step encoder** to rapid-fire LMB/RMB actions with real-time neon red LED feedback.
@@ -31,7 +31,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 | **Sensor** | PixArt PMW3360 (12,000 DPI / 250 IPS / 50G) |
 | **Polling Rate** | Real 1000Hz (Stable via length-matched differential pairs) |
 | **Buttons** | Kailh Mute Red (Tactile, Silent, Sub-1ms delay) |
-| **PCB** | 1.2mm HASL, Hand-routed with Ground Plane for Signal Integrity |
+| **PCB** | 1.2mm FR-4 HASL, Hand-routed with Ground Plane for Signal Integrity |
 | **Shell** | Custom PETG Matte-Finish modeled in TinkerCAD |
 
 ## Open Source & Licensing
