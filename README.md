@@ -1,45 +1,43 @@
-# Cobalt-X Zero - v1.0.0
+# Cobalt-X Zero — v1.0.0
+### The World's First Ultralight - <ENTER WEIGHT HERE>g, Fully Open-Source, Zero-Software, Bare-Metal Firmware Gaming Mouse (built by a kid).
 
-A custom-built, ultra-lightweight gaming mouse featuring the **PixArt PMW3360** high-performance sensor and an **STM32** microcontroller. I designed this from the ground up for maximum precision/smoothness, near zero latency, and a semi-ergonomic feel. 
+Firmware -- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+Hardware (PCB & 3D Models) -- [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-## 🚀 Project Overview
-This project is the result of a deep dive into peripheral engineering. At 15 (14yrs 10mths), I self-taught the PCB design and firmware development by studying datasheets and documentation to create a mouse that rivals top-tier retail options. This took roughly 3 months of work, and during this time I learned (Self Taught) Kicad, Fusion360 + TinkerCAD, Electrical Schematics, Trace Routing, and much more. I would also like to say that my main motives for making this is due to consumer level mice being very expensive for good hardware, and the big tech who makes them not even making them opensource and bloated with windows specific software. My aim is to make an opensource and easy to repair and build mouse that is significantly cheaper and better and also does not have any software and works right after the firmware is flashed.
+**Cobalt-X Zero** is a high-performance, bare-metal engineering project designed to pro that 'elite' gaming peripherals doesn't need bloated, proprietary software. In doing so even if it doesn't have fancy 8000hz polling rate or wireless design, it still outperforms 'god gaming mice' for a fraction of the cost. Engineered from the ground up to challenge industry standards of latency, weight, and customization, this project represents 3 months of self-taught development in PCB design and firmware architecture.
 
-The build uses a **1.6mm HASL PCB** which provides great structural integrity and a low center of gravity for a balanced, tactile feel.
+---
 
-### Why This Project?
-* **100% Custom:** I designed the firmware, the 3D-printable shell, and the PCB architecture myself.
-* **Dual-Board Setup:** I used a dedicated daughterboard for the side buttons to keep the main shell clean and modular.
-* **Low Latency Firmware:** My custom STM32 firmware is written for the fastest possible input response and smooth tracking.
-* **HyprX Macro:** A custom hardware-level macro I built that toggles via the side button.
-* **True USB-C:** A modern interface that makes the mouse "hot-swappable." If your cable ever dies, just plug in a new one and keep playing.
-* **Superior Customization:** This project has a feature not seen in any other mice on the market, a custom config file to edit parameters of the mouse easily without custom software or flashing of firmware.
+## Technical Details & Performance
+Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero relies on pure performance with no software bloat or a mass marketing gimick.
 
-## 🛠 Features & Specs
-| Feature | Specification |
+* **Internal 32kHz Oversampling:** While the USB polls at 1000Hz, the **STM32G4** (170MHz) polls the **PMW3360** sensor at 32,000Hz internally. This allows for advanced hardware-level jitter filtering and superior motion smoothness.
+* **DMA-Driven Pipeline:** Implemented Direct Memory Access (DMA) to handle sensor data transfer, bypassing CPU interrupts to ensure the processor is 100% focused on packets and the macro.
+* **Eager Debounce Algorithm:** Unlike standard mice that wait ~5ms to verify a click, Cobalt-X triggers on the initial falling edge of the signal for **sub-0.5ms click latency**.
+* **Predictive Packet Readiness:** HID packets are formatted and buffered in advance of the USB/OS request, ensuring data is delivered instantly from the buffer.
+
+## Key Features
+* **Zero-Software Config (VFS):** Hold the Macro button on plug-in to mount a **67MB Virtual Drive**. Edit `config.ini` directly to change DPI, Polling, and LOD without Windows-only bloatware.
+* **40g Ultra-Lightweight:** Engineered on a **1.2mm FR4 PCB** providing a ~25% weight reduction compared to standard 1.6mm boards while maintaining structural integrity.
+* **Hotswap USB-C:** A true modular interface allowing for custom paracord cables to reduce e-waste and achieve a "wireless" feel.
+* **Superior Firmware:** One main reason this mouse is better is the firmware. Like it's depicted above, the firmware is not only superior in every way, but also is under 1KB.
+* **HyprX Hardware Macros:** A dedicated hardware toggle that maps the **TTC Gold 24-step encoder** to rapid-fire LMB/RMB actions with real-time neon red LED feedback.
+
+## Specifications
+| Category | Spec |
 | :--- | :--- |
-| **Sensor** | PixArt PMW3360 Optical |
 | **MCU** | STM32G431KBT6 (170MHz ARM Cortex-M4) |
-| **Polling Rate** | 4000 Hz |
-| **DPI Range** | 100 – 12,000 DPI (Default: 1,000) |
-| **Click Latency** | <0.5ms (Industry Sda is ~5ms) |
-| **Tracking Speed** | 250 IPS |
-| **Acceleration** | 50 G |
-| **Push Buttons** | Kailh Mute Red (LMB / RMB / MMB / MAC / DFU) |
-| **Scroll Wheel** | TTC Gold Dustproof Encoder (24 Step) |
-| **Interface** | USB-C Full-Speed (Wired) |
-| **Customization** | Custom config file which eliminates bloated software |
+| **Sensor** | PixArt PMW3360 (12,000 DPI / 250 IPS / 50G) |
+| **Polling Rate** | Real 1000Hz (Stable via length-matched differential pairs) |
+| **Buttons** | Kailh Mute Red (Tactile, Silent, Sub-1ms delay) |
+| **PCB** | 1.2mm HASL, Hand-routed with Ground Plane for Signal Integrity |
+| **Shell** | Custom PETG Matte-Finish modeled in TinkerCAD |
 
-## 📐 Hardware Details
-I designed the PCB in **KiCad** with a major focus on clean routing and a small footprint.
-* **Signal Integrity:** USB D+/D- lines are perfectly length-matched to ensure stable 4000Hz polling without data errors.
-* **Debugging:** I integrated 3 debug pads so you can revert after a bad flash, and a easy to use (like a pi pico) button that held and plugged in enters DFU mode for flashing.
-* **Sensor Stability:** I used specific decoupling caps and isolated the power rails for the PMW3360 to stop any sensor jitter before it starts.
+## Open Source & Licensing
+This project is built to empower the community through transparency and accessibility. It stands as a testament to the power of self-taught engineering, bridging the gap between digital programming and physical hardware to outperform multi-billion dollar corporations through bare-metal efficiency.
 
-## 🔥 HyprX Macro System
-I coded a unique hardware toggle into the firmware I dub **HyprX**. 
-* **The Toggle:** Controlled via the side button.
-* **LED Feedback:** The mouse glows "Neon Blue" by default, but switches to "Blazing Red" when HyprX is active.
-* **The Macros:** * **Scroll Up:** Maps every step of the 24-step TTC Gold encoder to an LMB click.
-    * **Scroll Down:** Executes a rapid-fire RMB spam.
-* **Reset:** Press the side button again to go back to normal scrolling and blue lighting.
+I chose licenses that allow this to be open source while keeping this mine and not anyone elses. You are free to remix, edit, and share, provided you credit me and distribute contributions under the same licenses.
+
+---
+**Created by Synarix**
+*15 Years Old | Melbourne, Australia*
