@@ -2,6 +2,7 @@
 ### The World's First Ultralight - <ENTER WEIGHT HERE>g, Fully Open-Source, Zero-Software, Bare-Metal Firmware Gaming Mouse (built by a kid).
 
 Firmware -- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 Hardware (PCB & 3D Models) -- [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 **Cobalt-X Zero** is a high-performance, bare-metal engineering project designed to pro that 'elite' gaming peripherals doesn't need bloated, proprietary software. In doing so even if it doesn't have fancy 8000hz polling rate or wireless design, it still outperforms 'god gaming mice' for a fraction of the cost. Engineered from the ground up to challenge industry standards of latency, weight, and customization, this project represents 3 months of self-taught development in PCB design and firmware architecture.
