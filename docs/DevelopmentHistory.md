@@ -12,11 +12,14 @@ I ordered my first PCB from JLCPCB and realized my mistakes only after it arrive
 * **Mechanical Errors:** The sizing for the scroll wheel housing (edge.cuts) was off.
 * **Boot Failure:** I had no way to enter DFU mode easily, leading to hours of frustration trying to connect to the device via boot pins to no avail.
 
-### 28/2/26: Revision V2 - Optimization
-I completely re-evaluated the design based on the V1 failures (in just 2 days lol):
-* **Hardware Fixes:** Corrected all footprints, added a dedicated DFU button, and included test pads for the clock and firmware reversion.
-* **Weight Reduction:** Switched to 1.2mm PCB thickness.
-* **Firmware Development:** Wrote ~800 bytes of compiled bare-metal C++ code (with collaborative help from Google Gemini, and ~300 lines of c++) optimized for the STM32’s 170MHz clock speed including all major features.
+### 28/2/26: Revision V2 - The Flow-State Optimization
+I completely re-evaluated and rebuilt the design based on the V1 failures. Rather than taking days or weeks, I finished the entire schematic rework and PCB re-routing in a single 7-hour session. 
+
+I entered a complete "flow-state" so I had no breaks, was hyper-focused, and had total recall of every niche technical detail. By the end of the afternoon, I had executed:
+* **Hardware Fixes:** Corrected all button footprints and fixed the mirrored daughterboard connectors.
+* **New Features:** Added a dedicated DFU button and test pads for clock/firmware reversion.
+* **Weight Reduction:** Optimized for 1.2mm PCB thickness. Also removed the daugherboard for less space and no cables.
+* **Firmware:** Developed ~800 bytes of bare-metal C++ (~300 lines) optimized for the 170MHz clock.
 
 ### 7/3/26: Final Assembly & Post-Processing
 Currently I am waiting for the board to arrive and flash the firmware onto it. once it arrives in a few days and I do that, I will focus on the model of the 3D-printed shell in Black PETG using an Elegoo Neptune 4 Pro, and modeled via TinkerCAD. I am using a sanding process and other post-processing to remove layer lines and achieve a matte finish that looks like a professional injection-molded product for the final competition entry.
