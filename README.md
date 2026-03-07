@@ -1,5 +1,5 @@
 # Cobalt-X Zero — v1.0.0
-### The World's First Ultralight - <ENTER WEIGHT HERE>g, Fully Open-Source, Zero-Software, Bare-Metal Firmware Gaming Mouse (built by a kid).
+### The World's First Ultralight - 'ENTER WEIGHT HERE'g, Fully Open-Source, Zero-Software, Bare-Metal Firmware Gaming Mouse (built by a kid).
 
 Firmware -- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -19,7 +19,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 
 ## Key Features
 * **Zero-Software Config (VFS):** Hold the Macro button on plug-in to mount a **67MB Virtual Drive**. Edit `config.ini` directly to change DPI, Polling, and LOD without Windows-only bloatware.
-* **<ENTER WEIGHT HERE>g Ultra-Lightweight:** Engineered on a **1.2mm FR4 PCB** providing a ~25% weight reduction compared to standard 1.6mm boards while maintaining structural integrity.
+* **'ENTER WEIGHT HERE'g Ultra-Lightweight:** Engineered on a **1.2mm FR4 PCB** providing a ~25% weight reduction compared to standard 1.6mm boards while maintaining structural integrity.
 * **Hotswap USB-C:** A true modular interface allowing for custom paracord cables to reduce e-waste and achieve a "wireless" feel.
 * **Superior Firmware:** One main reason this mouse is better is the firmware. Like it's depicted above, the firmware is not only superior in every way, but also is under 1KB.
 * **HyprX Hardware Macros:** A dedicated hardware toggle that maps the **TTC Gold 24-step encoder** to rapid-fire LMB/RMB actions with real-time neon red LED feedback.
@@ -35,7 +35,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 | **Shell** | Custom PETG Matte-Finish modeled in TinkerCAD |
 
 ## Open Source & Licensing
-This project is built to empower the community through transparency and accessibility. It stands as a testament to the power of self-taught engineering, bridging the gap between digital programming and physical hardware to outperform multi-billion dollar corporations through bare-metal efficiency.
+This project is built to empower the community through transparency and accessibility. It stands as a testament to the power of self-taught engineering, bridging the gap between digital programming and physical hardware to outperform multi-million/billion dollar corporations through bare-metal efficiency.
 
 I chose licenses that allow this to be open source while keeping this mine and not anyone elses. You are free to remix, edit, and share, provided you credit me and distribute contributions under the same licenses.
 
