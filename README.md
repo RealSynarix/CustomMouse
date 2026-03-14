@@ -1,5 +1,5 @@
 # Cobalt-X Zero — v1.0.0
-### The World's First Ultralight - 'ENTER WEIGHT HERE'g, Fully Open-Source, Zero-Software, Bare-Metal Firmware Gaming Mouse (built by a kid).
+### The World's First Ultralight - 'ENTER WEIGHT HERE'g, Fully Open-Source, Zero-Software (Includes a VFS for config), Bare-Metal Firmware Gaming Mouse (built by a kid).
 
 Firmware -- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
