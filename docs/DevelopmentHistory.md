@@ -19,7 +19,9 @@ I entered a complete "flow-state" so I had no breaks, was hyper-focused, and had
 * **Hardware Fixes:** Corrected all button footprints and fixed the mirrored daughterboard connectors.
 * **New Features:** Added a dedicated DFU button and test pads for clock/firmware reversion.
 * **Weight Reduction:** Optimized for 1.2mm PCB thickness. Also removed the daugherboard for less space and no cables.
-* **Firmware:** Developed ~800 bytes of bare-metal C++ (~300 lines) optimized for the 170MHz clock.
 
-### 7/3/26: Final Assembly & Post-Processing
+### 7/3/26: Final Assembly & Post-Processing (Plans)
 Currently I am waiting for the board to arrive and flash the firmware onto it. once it arrives in a few days and I do that, I will focus on the model of the 3D-printed shell in Black PETG using an Elegoo Neptune 4 Pro, and modeled via TinkerCAD. I am using a sanding process and other post-processing to remove layer lines and achieve a matte finish that looks like a professional injection-molded product for the final competition entry.
+
+### 22/3/26: Board Arrived & Firmware Works
+After I recieved the PCB, I decided I would not solder the parts myself as I'm not good at it and may join connections or damage components. I went to a shop near me and got it soldered for 20 bucks! I was expecting alot more but thats great! Anyway, once I got the PCB, I could not for the life of me get the firmware right! I'll be upfront, I am using AI to build the firmware, becasue lets be real, AI is a tool and why would I not use a tool to save a year in coding? Also, I am very good at prompting AI so that is how I have been able todo all of this. Anyway, It took me so long to get the firmware right, but I ended up using the Arduino IDE and set my board to the right one and with some other tweaks and stuff, It worked. I used Claude Sonnet and gave a like 500 word prompt and told it exactly what todo, and after a few itterations and fixes, I got my device recognised as a HID over USB! It is 2am as of writing this so Im not doing any more firmware dev, but this is massive progress
