@@ -35,7 +35,7 @@ Most "pro" mice rely on software tricks and marketing, while the Cobalt-X Zero r
 | **Shell** | Custom PETG Matte-Finish modeled in TinkerCAD |
 
 ## IMPORTANT NOTE
-* **Double-Clicks & Latency:** While the firmwaer registers clicks in nanoseconds, the usb stack unfortunately caps polling at 1ms which means that all clicks are at best 1ms in delay, and at worst 4ms (from testing). Also, becasue of how the firmware is written, the design is prone to double clicks, but from my testing there is no real concern on this.
+* **Double-Clicks & Latency:** While the firmware registers clicks in nanoseconds, the usb stack unfortunately caps polling at 1ms which means that all clicks are at best 1ms in delay, and at worst 4ms (from testing), with 2.8ms being the average. Also, becasue of how the firmware is written, the design is prone to double clicks, but from my testing there is no real concern on this.
 
 ## Open Source & Licensing
 This project is built to empower the community through transparency and accessibility. It stands as a testament to the power of self-taught engineering, bridging the gap between digital programming and physical hardware to outperform multi-million/billion dollar corporations through bare-metal efficiency.
